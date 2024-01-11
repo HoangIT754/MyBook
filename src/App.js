@@ -1,4 +1,7 @@
-import "./App.css";
+import "./CSS/App.css";
+import "./CSS/Book.css";
+import "./CSS/MainPage.css";
+import "./CSS/SearchPage.css";
 import React, { useState, useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 
@@ -97,4 +100,3 @@ function App() {
 }
 
 export default App;
-  
