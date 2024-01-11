@@ -2,11 +2,13 @@ import React from "react";
 import Book from "../Main/Book";
 
 const SearchResult = (props) => {
-  const books = props.books;
-  const onMove = props.onMove;
-  const searchBooks = props.searchBooks;
+  const { books, onMove, searchBooks } = props;
 
-  if (!Array.isArray(searchBooks) || searchBooks.length === 0 || !Array.isArray(books)) {
+  if (
+    !Array.isArray(searchBooks) ||
+    searchBooks.length === 0 ||
+    !Array.isArray(books)
+  ) {
     return <div className="SearchResult"></div>;
   }
 

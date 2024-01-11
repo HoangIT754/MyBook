@@ -2,9 +2,7 @@ import React from "react";
 import BookOptions from "./BookOptions";
 
 const Book = (props) => {
-  const category = props.categoryKey;
-  const book = props.book;
-  const onMove = props.onMove;
+  const { categoryKey, book, onMove } = props;
 
   return (
     <li>
@@ -21,7 +19,7 @@ const Book = (props) => {
                   : "",
             }}
           ></div>
-          <BookOptions category={category} book={book} onMove={onMove} />
+          <BookOptions category={categoryKey} book={book} onMove={onMove} />
         </div>
         <div className="TitleBook">{book.title}</div>
         <div className="Author">{book.authors}</div>

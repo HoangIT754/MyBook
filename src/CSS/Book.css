@@ -1,0 +1,67 @@
+/* Books */
+
+.ListBook ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .ListBook ul li {
+    padding: 10px 15px;
+    text-align: left;
+  }
+  
+  .Book {
+    width: 140px;
+  }
+  
+  .TitleBook,
+  .Author {
+    font-size: 0.8em;
+  }
+  
+  .TitleBook {
+    margin-top: 10px;
+  }
+  
+  .Author {
+    color: #999;
+  }
+  
+  .TopBook {
+    position: relative;
+    height: 200px;
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  .BookCover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background: #eee;
+  }
+  
+  .BookOption {
+    position: absolute;
+    right: 0;
+    bottom: -15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url("../icons/arrow-drop-down.svg"),
+      linear-gradient(to bottom right, rgb(133, 255, 26), rgb(43, 189, 251));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+  
+  .BookOption select {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+  }

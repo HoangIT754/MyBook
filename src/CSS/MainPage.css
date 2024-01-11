@@ -1,0 +1,54 @@
+/* Main Page */
+.MainPageTitle {
+  padding: 10px 0;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(133, 255, 26),
+    rgb(43, 189, 251)
+  );
+  text-align: center;
+}
+
+.MainPageTitle h1 {
+  font-weight: 400;
+  margin: 0;
+  color: white;
+}
+
+.ListCategories {
+  padding: 0 0 80px;
+  flex: 1;
+}
+
+.Category {
+  padding: 0 10px 20px;
+}
+
+.CategoryTitle h2 {
+  border-bottom: 1px solid #dedede;
+}
+
+.ListBook {
+  text-align: center;
+}
+
+.SearchButton {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+}
+
+.SearchButton button {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #2e7d32;
+  background-image: url("../icons/add.svg"),
+    linear-gradient(to bottom right, rgb(133, 255, 26), rgb(43, 189, 251));
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 45px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  font-size: 0;
+}

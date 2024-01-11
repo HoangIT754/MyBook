@@ -6,12 +6,11 @@ const SearchInput = (props) => {
 
   const handleQuery = (e) => {
     const inputValue = e.target.value;
-    if(inputValue != null){
-        setQuery(inputValue);
-        onSearch(inputValue);
-    }
-    else{
-        setQuery("")
+    if (inputValue != null) {
+      setQuery(inputValue);
+      onSearch(inputValue);
+    } else {
+      setQuery("");
     }
   };
 
